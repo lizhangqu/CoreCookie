@@ -1,0 +1,10 @@
+apply plugin: 'java'
+apply plugin: 'application'
+
+mainClassName="cn.edu.zafu.sample.Main"
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.squareup.okhttp:okhttp:2.5.0'
+    compile project(':library-base')
+    compile 'org.jsoup:jsoup:1.8.3'
+}
